@@ -4245,6 +4245,32 @@ h6,
 }
 
 /* Menu Sidebar */
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 30px;
+  top: 40px;
+  width: max-content;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.menu-sidebar:hover .dropdown-content {
+  background-color: #00cc83;
+  display: block;
+}
+
 .menu-sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4518,6 +4544,11 @@ h6,
     color: #415674;
   }
 }
+
+.menu-btn-sidebar {
+  position: relative;
+}
+
 .main-header.header-two:not(.fixed-header) .menu-btn-sidebar form {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.15);

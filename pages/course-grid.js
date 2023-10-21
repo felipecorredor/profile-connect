@@ -2,6 +2,7 @@ import Link from "next/link";
 import PageBanner from "../src/components/PageBanner";
 import Layout from "../src/layout/Layout";
 import Pagination from "../src/Pagination";
+
 const CourseGrid = () => {
   return (
     <Layout>

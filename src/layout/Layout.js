@@ -6,7 +6,9 @@ import { animation } from "../utils";
 import Footer from "./Footer";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import RegisterModal from "../components/modals/RegisterModal";
+import RegisterModal from "../components/modals/RegisterModal/RegisterModal";
+import ToasterProvider from "../../providers/ToastProvider";
+import LoginModal from "../components/modals/LoginModal/LoginModal";
 
 const Layout = ({ children, header, footer }) => {
   useEffect(() => {
@@ -19,10 +21,12 @@ const Layout = ({ children, header, footer }) => {
     <Fragment>
       <VideoPopup />
       <ImageView />
+      <RegisterModal />
+      <LoginModal />
+      <ToasterProvider />
       <div className="page-wrapper">
         {/* Preloader */}
         {/* <div className="preloader" /> */}
-        <RegisterModal />
         {/* main header */}
         <Header header={header} />
         {/*Form Back Drop*/}

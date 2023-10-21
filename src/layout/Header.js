@@ -3,6 +3,7 @@ import { Fragment, useEffect, useState } from "react";
 import { stickyNav } from "../utils";
 import MobileHeader from "./MobileHeader";
 import useRegisterModal from "../../hooks/useRegisterModal";
+import useLoginModal from "../../hooks/useLoginModal";
 
 const Header = ({ header }) => {
   useEffect(() => {
@@ -11,11 +12,7 @@ const Header = ({ header }) => {
   const [navToggle, setNavToggle] = useState(false);
 
   const registerModal = useRegisterModal();
-
-  const onOpen = () => {
-    console.log("onOpen:::");
-    registerModal.onOpen();
-  };
+  const loginModal = useLoginModal();
 
   switch (header) {
     case 1:
@@ -23,22 +20,19 @@ const Header = ({ header }) => {
         <Header1
           navToggle={navToggle}
           setNavToggle={setNavToggle}
-          onOpen={onOpen}
+          onOpenRegister={registerModal.onOpen}
+          onOpenLogin={loginModal.onOpen}
         />
       );
 
     default:
       return (
-        <DefaultHeader
-          navToggle={navToggle}
-          setNavToggle={setNavToggle}
-          onOpen={onOpen}
-        />
+        <DefaultHeader navToggle={navToggle} setNavToggle={setNavToggle} />
       );
   }
 };
 export default Header;
-const Header1 = ({ navToggle, setNavToggle, onOpen }) => (
+const Header1 = ({ navToggle, setNavToggle, onOpenRegister, onOpenLogin }) => (
     <Fragment>
       <header className="main-header">
         {/* Header-Top */}
@@ -81,7 +75,6 @@ const Header1 = ({ navToggle, setNavToggle, onOpen }) => (
                       className="navbar-toggle"
                       data-toggle="collapse"
                       data-target=".navbar-collapse"
-                      onClick={() => setNavToggle(!navToggle)}
                     >
                       <span className="icon-bar" />
                       <span className="icon-bar" />
@@ -102,19 +95,26 @@ const Header1 = ({ navToggle, setNavToggle, onOpen }) => (
               {/* Menu Button */}
               <div
                 className="menu-btn-sidebar d-flex align-items-center"
-                onClick={onOpen}
+                onClick={() => setNavToggle(!navToggle)}
               >
                 <button>
                   <i className="far fa-user-circle" />
                 </button>
                 {/* menu sidbar */}
                 <div className="menu-sidebar">
-                  <button>
+                  <button id="dropdown-item-button" title="Dropdown button">
                     <span className="icon-bar" />
                     <span className="icon-bar" />
                     <span className="icon-bar" />
                   </button>
                 </div>
+                {navToggle && (
+                  <div className="dropdown-content">
+                    <a onClick={onOpenLogin}>Iniciar sesión</a>
+                    <a onClick={onOpenRegister}>Registrarse</a>
+                    <a href="#">Cerrar sesión</a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ const Header1 = ({ navToggle, setNavToggle, onOpen }) => (
       </header>
     </Fragment>
   ),
-  DefaultHeader = ({ navToggle, setNavToggle, onOpen }) => (
+  DefaultHeader = ({ navToggle, setNavToggle }) => (
     <Fragment>
       <header className="main-header header-two">
         {/* Header-Top */}
@@ -186,10 +186,7 @@ const Header1 = ({ navToggle, setNavToggle, onOpen }) => (
                 {/* Main Menu End*/}
               </div>
               {/* Menu Button */}
-              <div
-                className="menu-btn-sidebar d-flex align-items-center"
-                onClick={onOpen}
-              >
+              <div className="menu-btn-sidebar d-flex align-items-center">
                 <button>
                   <i className="far fa-user-circle" />
                 </button>
