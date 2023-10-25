@@ -229,6 +229,11 @@ const Header1 = ({ navToggle, setNavToggle, onOpenRegister, onOpenLogin }) => (
           <a>faqs</a>
         </Link>
       </li>
+      <li>
+        <Link href="/create-profile">
+          <a>Crear perfil</a>
+        </Link>
+      </li>
     </ul>
   ),
   HeaderTop = () => (
