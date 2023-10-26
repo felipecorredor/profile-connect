@@ -2,20 +2,20 @@ import React from "react";
 import { useFieldArray, useFormContext } from "react-hook-form";
 import { Form, InputGroup, FormControl, Button } from "react-bootstrap";
 
-const ExperienceForm = () => {
+const EducationForm = () => {
   const methods = useFormContext();
   const { register, control } = methods;
 
   const { fields, append, remove } = useFieldArray({
     control,
-    name: "experiences",
+    name: "educations",
   });
 
   return (
     <>
       {fields.length > 0 && (
         <div className="d-flex justify-content-between">
-          <h3>Experiencia</h3>
+          <h3>Educación</h3>
           <Button
             type="button"
             variant="success"
@@ -33,53 +33,30 @@ const ExperienceForm = () => {
         <Form.Row key={item.id} className={`${index !== 0 && "pt-30"}`}>
           <Form.Group as={InputGroup} className="col-md-6">
             <FormControl
-              {...register(`experiences.${index}.position`)}
-              placeholder="Cargo"
+              {...register(`educations.${index}.university`)}
+              placeholder="Institución educativa"
             />
           </Form.Group>
           <Form.Group as={InputGroup} className="col-md-6">
             <FormControl
-              {...register(`experiences.${index}.company`)}
-              placeholder="Nombre de la empresa"
+              {...register(`educations.${index}.degree`)}
+              placeholder="Titulo"
             />
           </Form.Group>
-          <Form.Group as={InputGroup} className="col-md-6">
-            <FormControl
-              {...register(`experiences.${index}.location`)}
-              placeholder="Ubicación"
-            />
-          </Form.Group>
-
-          <div className="form-group col-md-6">
-            <select
-              name="subject"
-              {...register(`experiences.${index}.typeEmployment`)}
-              className="form-control"
-              style={{ fontFamily: "unset" }}
-            >
-              <option selected disabled>
-                Tipo de empleo
-              </option>
-              <option value="full-time">Jornada completa</option>
-              <option value="part-time">Jornada parcial</option>
-              <option value="autonomous">Autónomo</option>
-              <option value="temporary-contract">Contrato temporal</option>
-              <option value="practice-contract">Contrato de practica</option>
-            </select>
-          </div>
 
           <Form.Group as={InputGroup} className="col-md-12">
             <FormControl
-              {...register(`experiences.${index}.description`)}
-              placeholder="Descripción"
+              {...register(`educations.${index}.description`)}
               as="textarea"
               rows={3}
+              placeholder="Descripción"
             />
           </Form.Group>
+
           <Button
             type="button"
             onClick={() => remove(index)}
-            className="col-md-2"
+            className="col-md-2 ml-1"
             variant="danger"
           >
             <i className="fas fa-trash" />
@@ -89,7 +66,7 @@ const ExperienceForm = () => {
 
       {!fields.length && (
         <section className="mt-10">
-          <h3>Experiencia</h3>
+          <h3>Educación</h3>
           <button
             className="theme-btn style-two small"
             type="button"
@@ -97,7 +74,7 @@ const ExperienceForm = () => {
               append({});
             }}
           >
-            Agregar experiencia
+            Agregar educación
           </button>
         </section>
       )}
@@ -105,4 +82,4 @@ const ExperienceForm = () => {
   );
 };
 
-export default ExperienceForm;
+export default EducationForm;

@@ -13,6 +13,21 @@ const SkillsForm = () => {
 
   return (
     <>
+      {fields.length > 0 && (
+        <div className="d-flex justify-content-between">
+          <h3>Habilidades</h3>
+          <Button
+            type="button"
+            variant="success"
+            onClick={() => {
+              append({});
+            }}
+          >
+            <span className="mr-2">Agregar</span>
+            <i className="fas fa-plus" />
+          </Button>
+        </div>
+      )}
       <div>
         {fields.map((item, index) => {
           return (
@@ -25,7 +40,7 @@ const SkillsForm = () => {
                   <Form.Control
                     type="text"
                     {...register(`skills.${index}.name`)}
-                    placeholder="Nombre"
+                    placeholder="Ej. React"
                     className="form-control"
                   />
                 </Form.Group>
@@ -46,17 +61,20 @@ const SkillsForm = () => {
         })}
       </div>
 
-      <section className="mt-10">
-        <button
-          className="theme-btn style-two small"
-          type="button"
-          onClick={() => {
-            append({ name: "" });
-          }}
-        >
-          Añadir skill
-        </button>
-      </section>
+      {!fields.length && (
+        <section className="mt-10">
+          <h3>Habilidades</h3>
+          <button
+            className="theme-btn style-two small"
+            type="button"
+            onClick={() => {
+              append({});
+            }}
+          >
+            Agregar habilidad
+          </button>
+        </section>
+      )}
     </>
   );
 };

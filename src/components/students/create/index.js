@@ -6,6 +6,7 @@ import SkillsForm from "../skills";
 import ExperienceForm from "../experience";
 import toast from "react-hot-toast";
 import axios from "axios";
+import EducationForm from "../education";
 
 const DEFAULT_VALUES = {
   skills: [
@@ -32,7 +33,7 @@ const CreateStudent = () => {
   };
 
   return (
-    <div className="col-lg-12 pt-30">
+    <div className="col-lg-12 pt-30 pb-30">
       <FormProvider {...methods}>
         <form
           onSubmit={methods.handleSubmit(onSubmit)}
@@ -41,24 +42,23 @@ const CreateStudent = () => {
           name="faq-form"
         >
           <div>
-            <section className="pb-50">
+            <section>
               <BasicForm />
             </section>
             <section className="pb-50">
-              <h3>Skills</h3>
               <SkillsForm />
             </section>
             <section className="pb-50">
-              <h3>Experiencia</h3>
               <ExperienceForm />
             </section>
+            <section className="pb-50">
+              <EducationForm />
+            </section>
 
-            <div className="col-sm-12">
-              <div className="form-group mb-0 form-btn-label">
-                <button type="submit" className="theme-btn">
-                  Crear perfil <i className="fas fa-arrow-right" />
-                </button>
-              </div>
+            <div className="d-flex justify-content-center">
+              <button type="submit" className="theme-btn">
+                Crear perfil <i className="fas fa-arrow-right" />
+              </button>
             </div>
           </div>
         </form>
