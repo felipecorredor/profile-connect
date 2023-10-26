@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Fragment } from "react";
-import Newsletters from "../components/Newsletters";
 
 const Footer = ({ footer }) => {
   const scrollTop = () => {
@@ -111,7 +110,6 @@ const FollowIcon = () => (
   DefaultFooter = ({ scrollTop }) => (
     <footer className="main-footer bg-blue">
       <div className="container">
-        <Newsletters />
         <div className="row justify-content-between text-white pt-75">
           <div className="col-lg-3 col-sm-4">
             <div className="footer-widget about-widget">
