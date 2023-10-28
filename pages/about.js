@@ -21,27 +21,16 @@ const About = () => {
             <div className="col-lg-5">
               <div className="about-page-content wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
-                  <span className="sub-title-two">About Learn Us</span>
-                  <h2>We’re Experience to Online Education Learning Center</h2>
+                  <span className="sub-title-two">Sobre nosotros</span>
+                  <h2>Universidad de Manizales</h2>
                 </div>
                 <p>
-                  Sit amet consectetur adipiscing eiusmo tempor indun ut labore
-                  et dolore magna aliquaes suspendisse ultrice gravid commodo
-                  viverra maecenas accusan
+                La Universidad Manizales es una institución educativa comprometida con la excelencia académica y la formación integral de sus estudiantes. Fundada en 1972, nuestra universidad ha sido un faro de conocimiento y crecimiento personal en la región de Manizales y más allá.
                 </p>
-                <b>
-                  Quis autem vel eum rerehenderit quivol uptate velit esse quam
-                  molestiae consequature
-                </b>
                 <div className="about-btns pt-25">
-                  <Link href="/about">
+                  <Link href="https://umanizales.edu.co/">
                     <a className="theme-btn my-15">
-                      Learn more <i className="fas fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <Link href="/faqs">
-                    <a className="read-more">
-                      How it works <i className="fas fa-arrow-right" />
+                      Conoce Más <i className="fas fa-arrow-right" />
                     </a>
                   </Link>
                 </div>
@@ -51,12 +40,12 @@ const About = () => {
               <div className="about-page-middle rpt-55 rpb-30 wow fadeInRight delay-0-2s">
                 <img src="assets/images/about/about-page.png" alt="About" />
                 <div className="circle-content">
-                  <b>25</b>
-                  <span>Years Of Experience</span>
+                  <b>51</b>
+                  <span>Años de experiencia</span>
                 </div>
               </div>
             </div>
-            <div className="col-lg-2">
+            {/* <div className="col-lg-2">
               <div className="counter-wrap style-two wow fadeInRight delay-0-4s">
                 <div className="success-item">
                   <span
@@ -99,7 +88,7 @@ const About = () => {
                   <span>Awards Winning</span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -117,16 +106,10 @@ const About = () => {
                 <div className="icon">
                   <i className="flaticon-reading-book" />
                 </div>
-                <h4>Experts Minds</h4>
+                <h4>Innovación Educativa</h4>
                 <p>
-                  Sed ut persiciatis omnis natus voluptate accsantie doloreue
-                  laudantium
+                La innovación es un pilar fundamental en nuestra filosofía educativa. Explora cómo utilizamos enfoques pedagógicos modernos y tecnología de vanguardia para brindar a nuestros estudiantes una educación de calidad.
                 </p>
-                <Link href="/about">
-                  <a className="details-btn">
-                    <i className="fas fa-long-arrow-alt-right" />
-                  </a>
-                </Link>
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
@@ -134,16 +117,11 @@ const About = () => {
                 <div className="icon">
                   <img src="assets/images/features/icon7.png" alt="Icon" />
                 </div>
-                <h4>Multiple Courses</h4>
+                <h4>Reconocimientos y Alianzas Estratégicas</h4>
                 <p>
-                  Sed ut persiciatis omnis natus voluptate accsantie doloreue
-                  laudantium
+                La Universidad Manizales ha recibido reconocimientos por su excelencia académica y ha establecido alianzas estratégicas con instituciones destacadas. Descubre nuestros logros y colaboraciones que enriquecen la experiencia de nuestros estudiantes.
                 </p>
-                <Link href="/about">
-                  <a className="details-btn">
-                    <i className="fas fa-long-arrow-alt-right" />
-                  </a>
-                </Link>
+                
               </div>
             </div>
             <div className="col-lg-3 col-sm-6">
@@ -151,33 +129,10 @@ const About = () => {
                 <div className="icon">
                   <img src="assets/images/features/icon8.png" alt="Icon" />
                 </div>
-                <h4>Hire Quickly</h4>
+                <h4>Éxito de Nuestros Graduados</h4>
                 <p>
-                  Sed ut persiciatis omnis natus voluptate accsantie doloreue
-                  laudantium
+                Aprende sobre los éxitos de nuestros graduados y cómo han aplicado su educación de la Universidad Manizales en diversas industrias y roles, contribuyendo al desarrollo de la sociedad.
                 </p>
-                <Link href="/about">
-                  <a className="details-btn">
-                    <i className="fas fa-long-arrow-alt-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6">
-              <div className="feature-three-item wow fadeInUp delay-0-8s">
-                <div className="icon">
-                  <img src="assets/images/features/icon9.png" alt="Icon" />
-                </div>
-                <h4>Video Tutorials</h4>
-                <p>
-                  Sed ut persiciatis omnis natus voluptate accsantie doloreue
-                  laudantium
-                </p>
-                <Link href="/about">
-                  <a className="details-btn">
-                    <i className="fas fa-long-arrow-alt-right" />
-                  </a>
-                </Link>
               </div>
             </div>
           </div>
@@ -185,7 +140,7 @@ const About = () => {
       </section>
       {/* Features Section End */}
       {/* Team Section Start */}
-      <section className="team-setion-two bg-lighter rel z-1 pt-120 rpt-90 pb-70 rpb-40">
+      {/* <section className="team-setion-two bg-lighter rel z-1 pt-120 rpt-90 pb-70 rpb-40">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
@@ -398,7 +353,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Team Section End */}
       {/* Advertise Area Start */}
       <section className="advertise-area pt-130 rpt-100 pb-90 rpb-60">
@@ -408,7 +363,7 @@ const About = () => {
       </section>
       {/* Advertise Area End */}
       {/* Why Learn Start */}
-      <section className="why-learn-area pb-120 rpb-100">
+      {/* <section className="why-learn-area pb-120 rpb-100">
         <div className="container">
           <div className="row align-items-center large-gap wow fadeInLeft delay-0-2s">
             <div className="col-lg-6">
@@ -477,10 +432,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Why Learn End */}
       {/* Testimonials Section Start */}
-      <section className="testimonials-section-two my-80 rel z-1 wow fadeInUp delay-0-2s">
+      {/* <section className="testimonials-section-two my-80 rel z-1 wow fadeInUp delay-0-2s">
         <div className="container">
           <Slider {...testimonialtwoSlider} className="testimonial-two-wrap">
             <div className="testimonial-item-two">
@@ -563,10 +518,10 @@ const About = () => {
             </div>
           </Slider>
         </div>
-      </section>
+      </section> */}
       {/* Testimonials Section End */}
       {/* Partner Section Start */}
-      <section className="partner-section rel z-1 pt-120 rpt-90 pb-75 rpb-55">
+      {/* <section className="partner-section rel z-1 pt-120 rpt-90 pb-75 rpb-55">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -636,7 +591,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };
