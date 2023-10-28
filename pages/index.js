@@ -21,21 +21,19 @@ const Index = (props) => {
           <div className="row align-items-center">
             <div className="col-lg-7">
               <div className="hero-content rpt-25 rmb-75">
-                <span className="sub-title style-two mb-20 wow fadeInUp delay-0-2s">
-                  Coaching &amp; Speker
-                </span>
+                  {/* <span className="sub-title style-two mb-20 wow fadeInUp delay-0-2s">
+                    Coaching &amp; Speker
+                  </span> */}
                 <h1 className="mb-20 wow fadeInUp delay-0-4s">
-                  Build Bright Life? Take Our Life Coach
+                Descubre Futuros Profesionales
                 </h1>
                 <p className="wow fadeInUp delay-0-6s">
-                  Sit amet consectetur adipiscing elit sed do eiusmod tempor
-                  incididunt labore dolore magna aliqua suspendisse ultrices
-                  gravida.
+                ¡Bienvenido a nuestra plataforma donde podrás descubrir los perfiles de nuestros talentosos estudiantes, destacados por sus excelentes habilidades y cualidades únicas!
                 </p>
                 <div className="hero-btn mt-30 wow fadeInUp delay-0-8s">
                   <Link href="/course-grid">
                     <a className="theme-btn">
-                      Get Your Free Coach <i className="fas fa-arrow-right" />
+                    Empieza a Contratar Talentos <i className="fas fa-arrow-right" />
                     </a>
                   </Link>
                 </div>
@@ -61,10 +59,9 @@ const Index = (props) => {
                   <img src="assets/images/features/icon1.png" alt="Icon" />
                 </div>
                 <div className="content">
-                  <h4>Online Courses From Experts</h4>
+                  <h4>Explora el Talento Estudiantil</h4>
                   <p>
-                    Sit amet consectetur adipisc elit sed do eiusmod temporse
-                    incididunt labore dolore
+                  Descubre estudiantes con ideas frescas y creatividad para impulsar tu empresa.
                   </p>
                 </div>
               </div>
@@ -75,10 +72,9 @@ const Index = (props) => {
                   <img src="assets/images/features/icon2.png" alt="Icon" />
                 </div>
                 <div className="content">
-                  <h4>Over 500+ High Quality Topics</h4>
+                  <h4>Conoce Futuros Profesionales</h4>
                   <p>
-                    Sit amet consectetur adipisc elit sed do eiusmod temporse
-                    incididunt labore dolore
+                  Descubre estudiantes que están listos para dar forma al futuro de tu empresa.
                   </p>
                 </div>
               </div>
@@ -89,10 +85,9 @@ const Index = (props) => {
                   <img src="assets/images/features/icon1.png" alt="Icon" />
                 </div>
                 <div className="content">
-                  <h4>Event &amp; Program Video Update</h4>
+                  <h4>Perfiles Universitarios Destacados</h4>
                   <p>
-                    Sit amet consectetur adipisc elit sed do eiusmod temporse
-                    incididunt labore dolore
+                  Explora estudiantes con habilidades excepcionales listos para hacer brillar tu empresa.
                   </p>
                 </div>
               </div>
@@ -123,8 +118,8 @@ const Index = (props) => {
             <div className="col-lg-7">
               <div className="about-content rel z-2 pb-115 rpb-85 wow fadeInRight delay-0-2s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-25">about us</span>
-                  <h2>We Provide Life Coach From Expert Advisors</h2>
+                  <span className="sub-title mb-25">Sobre nosotros</span>
+                  <h2>Facultad de Ciencias e ingeniería</h2>
                 </div>
                 <div className="about-features">
                   <div className="row">
@@ -134,8 +129,8 @@ const Index = (props) => {
                           <i className="fas fa-check" />
                         </div>
                         <div className="content">
-                          <h5>Exclusive Coach</h5>
-                          <p>Sit consectetur adipiscing eiuse tempor incides</p>
+                          <h5>Programas Académicos Destacados</h5>
+                          <p>Ofrecemos programas académicos avanzados para impulsar el éxito en ciencia e ingeniería.</p>
                         </div>
                       </div>
                     </div>
@@ -145,8 +140,8 @@ const Index = (props) => {
                           <i className="fas fa-check" />
                         </div>
                         <div className="content">
-                          <h5>Creative Minds</h5>
-                          <p>Sit consectetur adipiscing eiuse tempor incides</p>
+                          <h5>Nuestros Profesores y Expertos</h5>
+                          <p>Contamos con un equipo de profesores y expertos altamente cualificados en el campo de la ciencia y la ingeniería.</p>
                         </div>
                       </div>
                     </div>
@@ -156,25 +151,15 @@ const Index = (props) => {
                           <i className="fas fa-check" />
                         </div>
                         <div className="content">
-                          <h5>Master Certified</h5>
-                          <p>Sit consectetur adipiscing eiuse tempor incides</p>
+                          <h5>Educación de Calidad</h5>
+                          <p>Nuestros programas académicos destacados te ofrecen una educación de primera en ciencia e ingeniería, impulsándote hacia un futuro exitoso.</p>
                         </div>
                       </div>
                     </div>
-                    <div className="col-sm-6">
-                      <div className="feature-item">
-                        <div className="icon">
-                          <i className="fas fa-check" />
-                        </div>
-                        <div className="content">
-                          <h5>Video Tutorials</h5>
-                          <p>Sit consectetur adipiscing eiuse tempor incides</p>
-                        </div>
-                      </div>
-                    </div>
+                   
                   </div>
                 </div>
-                <div className="about-btns">
+                {/* <div className="about-btns">
                   <Link href="/about">
                     <a className="theme-btn style-two my-15">
                       Learn more us <i className="fas fa-arrow-right" />
@@ -185,7 +170,7 @@ const Index = (props) => {
                       How it works <i className="fas fa-arrow-right" />
                     </a>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -203,7 +188,7 @@ const Index = (props) => {
       </section>
       {/* Work Process Section End */}
       {/* Newsletter Section Start */}
-      <section className="newsletter-section pb-130 rpb-100 wow fadeInUp delay-0-2s">
+      {/* <section className="newsletter-section pb-130 rpb-100 wow fadeInUp delay-0-2s">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -283,10 +268,10 @@ const Index = (props) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Newsletter Section End */}
       {/* Events Section Start */}
-      <section className="events-section rel z-1 py-130 rpy-100 bg-blue text-white">
+      {/* <section className="events-section rel z-1 py-130 rpy-100 bg-blue text-white">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-8 col-md-9">
@@ -388,10 +373,10 @@ const Index = (props) => {
           src="assets/images/shapes/circle-dots.png"
           alt="Shape"
         />
-      </section>
+      </section> */}
       {/* Events Section End */}
       {/* Testimonials Section Start */}
-      <section className="testimonials-section bg-white rel z-1 py-130 rpy-100">
+      {/* <section className="testimonials-section bg-white rel z-1 py-130 rpy-100">
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-5">
@@ -552,137 +537,11 @@ const Index = (props) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Testimonials Section End */}
-      {/* Blog Section Start */}
-      <section className="blog-section">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-6 col-lg-7 col-md-8">
-              <div className="section-title text-center mb-55">
-                <span className="sub-title mb-20">News &amp; Blog</span>
-                <h2>Read Some Store About News &amp; Blog</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="blog-item big-item wow fadeInUp delay-0-2s">
-                <div className="blog-image">
-                  <img src="assets/images/blog/blog1.jpg" alt="Blog" />
-                </div>
-                <div className="blog-content">
-                  <span className="date">
-                    <span>25</span> March
-                  </span>
-                  <div className="content">
-                    <h4>
-                      <Link href="/blog-details">
-                        Building Web Layouts For Dual-Screen And Foldable
-                        Devices Designing
-                      </Link>
-                    </h4>
-                    <ul className="blog-meta">
-                      <li>
-                        <i className="far fa-user" />{" "}
-                        <Link href="/blog">By Somalia</Link>
-                      </li>
-                      <li>
-                        <i className="far fa-comments" />{" "}
-                        <Link href="/blog">Comments (5)</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-6 col-sm-6">
-              <div className="blog-item wow fadeInUp delay-0-4s">
-                <div className="blog-image">
-                  <img src="assets/images/blog/blog2.jpg" alt="Blog" />
-                </div>
-                <div className="blog-content">
-                  <span className="date">
-                    <span>25</span> March
-                  </span>
-                  <div className="content">
-                    <ul className="blog-meta">
-                      <li>
-                        <i className="far fa-user" />{" "}
-                        <Link href="/blog">By Somalia</Link>
-                      </li>
-                      <li>
-                        <i className="far fa-comments" />{" "}
-                        <Link href="/blog">Com (5)</Link>
-                      </li>
-                    </ul>
-                    <h5>
-                      <Link href="/blog-details">
-                        Designing Better Linke Website And Email
-                      </Link>
-                    </h5>
-                    <p>
-                      Sit amet consectetur adiscins eiusmod tempor incididunt
-                    </p>
-                    <Link href="/blog-details">
-                      <a className="read-more">
-                        Read more <i className="fas fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-6 col-sm-6">
-              <div className="blog-item wow fadeInUp delay-0-6s">
-                <div className="blog-image">
-                  <img src="assets/images/blog/blog3.jpg" alt="Blog" />
-                </div>
-                <div className="blog-content">
-                  <span className="date">
-                    <span>03</span> April
-                  </span>
-                  <div className="content">
-                    <ul className="blog-meta">
-                      <li>
-                        <i className="far fa-user" />{" "}
-                        <Link href="/blog">By Somalia</Link>
-                      </li>
-                      <li>
-                        <i className="far fa-comments" />{" "}
-                        <Link href="/blog">Com (5)</Link>
-                      </li>
-                    </ul>
-                    <h5>
-                      <Link href="/blog-details">
-                        Useful VS Code Esions Front-End Develop
-                      </Link>
-                    </h5>
-                    <p>
-                      Sit amet consectetur adiscins eiusmod tempor incididunt
-                    </p>
-                    <Link href="/blog-details">
-                      <a className="read-more">
-                        Read more <i className="fas fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="blog-more-btn pt-30 text-center">
-            <Link href="/blog">
-              <a className="theme-btn style-three">
-                view more news <i className="fas fa-arrow-right" />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </section>
-      {/* Blog Section End */}
+      
       {/* Logo Section Start */}
-      <div className="logo-section pt-130 rpt-100 pb-80 rpb-50">
+      {/* <div className="logo-section pt-130 rpt-100 pb-80 rpb-50">
         <div className="container">
           <div className="logo-inner">
             <div className="logo-item wow fadeInUp delay-0-1s">
@@ -735,7 +594,7 @@ const Index = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Logo Section End */}
       {/* Instagram Section Start */}
       <div className="instagram-section pb-120 rpb-90">

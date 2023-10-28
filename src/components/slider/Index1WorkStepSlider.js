@@ -37,8 +37,8 @@ export default class Index1WorkStepSlider extends Component {
         <div className="row justify-content-between align-items-center pb-30 wow fadeInUp delay-0-2s">
           <div className="col-xl-7 col-lg-8">
             <div className="section-title">
-              <span className="sub-title mb-15">How It Works</span>
-              <h2>Very Simple Steps to Success Golas</h2>
+              <span className="sub-title mb-15">Como funciona</span>
+              <h2>Pasos muy simples para el éxito</h2>
             </div>
           </div>
           <div className="col-lg-4">
@@ -60,30 +60,27 @@ export default class Index1WorkStepSlider extends Component {
           <div className="work-step-item">
             <span className="number">01</span>
             <div className="content">
-              <h4>Transformation Completed</h4>
+              <h4>Crea Tu Cuenta Fácilmente</h4>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium
+              Comienza tu viaje en unos pocos minutos. Completa el sencillo proceso de registro y obtén acceso a nuestra plataforma.
               </p>
             </div>
           </div>
           <div className="work-step-item">
             <span className="number">02</span>
             <div className="content">
-              <h4>Schedule a Meeting</h4>
+              <h4>Descubre Perfiles Estudiantiles</h4>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium
+              Encuentra perfiles de estudiantes con habilidades excepcionales y antecedentes académicos destacados.
               </p>
             </div>
           </div>
           <div className="work-step-item">
             <span className="number">03</span>
             <div className="content">
-              <h4>Make a Decision</h4>
+              <h4>Conecta y Toma Acción</h4>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium
+              Establece conexiones con estudiantes y empresas. Toma medidas para iniciar conversaciones y avanzar en tu carrera o proceso de contratación.
               </p>
             </div>
           </div>

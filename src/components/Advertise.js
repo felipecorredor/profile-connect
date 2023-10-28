@@ -7,37 +7,13 @@ const Advertise = () => {
       <div className="col-lg-6">
         <div className="advertise-item wow fadeInUp delay-0-2s">
           <div className="content">
-            <h4>Become An Instructor?</h4>
+            <h4>Encuentra Tu Futuro Profesional</h4>
             <p>
-              Sit amet consectetur adipiscing sed eiusmod tempore dolore magna
-              suspendisse
+            En la Universidad Manizales, creemos en tu potencial.Regístrate hoy y comienza tu viaje hacia una carrera exitosa. 
             </p>
-            <Link href="/contact">
-              <a className="theme-btn">
-                Join with us <i className="fas fa-arrow-right" />
-              </a>
-            </Link>
           </div>
           <div className="image">
             <img src={advertise1.src} alt="Advertise" />
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-6">
-        <div className="advertise-item bg-two wow fadeInUp delay-0-4s">
-          <div className="content">
-            <h4>Get Online Courses</h4>
-            <p>
-              Amet consectetur adipiscing sed eius tempore dolore magna suspens
-            </p>
-            <Link href="/contact">
-              <a className="theme-btn style-two">
-                Join with us <i className="fas fa-arrow-right" />
-              </a>
-            </Link>
-          </div>
-          <div className="image">
-            <img src={advertise2.src} alt="Advertise" />
           </div>
         </div>
       </div>
