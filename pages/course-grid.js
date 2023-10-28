@@ -635,7 +635,7 @@ const CourseGrid = () => {
                 <ul className="pagination flex-wrap mt-20">
                   <Pagination
                     paginationCls={".course-grids .row .col-md-6"}
-                    sort={4}
+                    sort={8}
                   />
                 </ul>
               </div>

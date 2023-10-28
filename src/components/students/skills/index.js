@@ -31,7 +31,7 @@ const SkillsForm = () => {
       <div>
         {fields.map((item, index) => {
           return (
-            <div className="row">
+            <div className="row" key={item.id}>
               <div className="col-md-7">
                 <Form.Group key={item.id}>
                   <label htmlFor="full-name">
