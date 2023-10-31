@@ -12,7 +12,7 @@ const Counter = dynamic(() => import("../src/components/Counter"), {
 const About = () => {
   return (
     <Layout>
-      <PageBanner pageName={"About us"} />
+      <PageBanner pageName={"Sobre nosotros"} />
       {/* Page Banner End */}
       {/* About Section Start */}
       <section className="about-page-section pt-120 rpt-90">
