@@ -2,9 +2,7 @@ import Link from "next/link";
 import Layout from "../src/layout/Layout";
 
 import dynamic from "next/dynamic";
-import Slider from "react-slick";
 import Index1WorkStepSlider from "../src/components/slider/Index1WorkStepSlider";
-import { index1EventWrap, index1Testimonial } from "../src/sliderProps";
 
 const Index1Isotope = dynamic(
   () => import("../src/components/isotope/Index1Isotope"),
@@ -21,19 +19,19 @@ const Index = (props) => {
           <div className="row align-items-center">
             <div className="col-lg-7">
               <div className="hero-content rpt-25 rmb-75">
-                  {/* <span className="sub-title style-two mb-20 wow fadeInUp delay-0-2s">
-                    Coaching &amp; Speker
-                  </span> */}
                 <h1 className="mb-20 wow fadeInUp delay-0-4s">
-                Descubre Futuros Profesionales
+                  Descubre Futuros Profesionales
                 </h1>
                 <p className="wow fadeInUp delay-0-6s">
-                ¡Bienvenido a nuestra plataforma donde podrás descubrir los perfiles de nuestros talentosos estudiantes, destacados por sus excelentes habilidades y cualidades únicas!
+                  ¡Bienvenido a nuestra plataforma donde podrás descubrir los
+                  perfiles de nuestros talentosos estudiantes, destacados por
+                  sus excelentes habilidades y cualidades únicas!
                 </p>
                 <div className="hero-btn mt-30 wow fadeInUp delay-0-8s">
                   <Link href="/course-grid">
                     <a className="theme-btn">
-                    Empieza a Contratar Talentos <i className="fas fa-arrow-right" />
+                      Empieza a Contratar Talentos{" "}
+                      <i className="fas fa-arrow-right" />
                     </a>
                   </Link>
                 </div>
@@ -61,7 +59,8 @@ const Index = (props) => {
                 <div className="content">
                   <h4>Explora el Talento Estudiantil</h4>
                   <p>
-                  Descubre estudiantes con ideas frescas y creatividad para impulsar tu empresa.
+                    Descubre estudiantes con ideas frescas y creatividad para
+                    impulsar tu empresa.
                   </p>
                 </div>
               </div>
@@ -74,7 +73,8 @@ const Index = (props) => {
                 <div className="content">
                   <h4>Conoce Futuros Profesionales</h4>
                   <p>
-                  Descubre estudiantes que están listos para dar forma al futuro de tu empresa.
+                    Descubre estudiantes que están listos para dar forma al
+                    futuro de tu empresa.
                   </p>
                 </div>
               </div>
@@ -87,7 +87,8 @@ const Index = (props) => {
                 <div className="content">
                   <h4>Perfiles Universitarios Destacados</h4>
                   <p>
-                  Explora estudiantes con habilidades excepcionales listos para hacer brillar tu empresa.
+                    Explora estudiantes con habilidades excepcionales listos
+                    para hacer brillar tu empresa.
                   </p>
                 </div>
               </div>
@@ -130,7 +131,10 @@ const Index = (props) => {
                         </div>
                         <div className="content">
                           <h5>Programas Académicos Destacados</h5>
-                          <p>Ofrecemos programas académicos avanzados para impulsar el éxito en ciencia e ingeniería.</p>
+                          <p>
+                            Ofrecemos programas académicos avanzados para
+                            impulsar el éxito en ciencia e ingeniería.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -141,7 +145,11 @@ const Index = (props) => {
                         </div>
                         <div className="content">
                           <h5>Nuestros Profesores y Expertos</h5>
-                          <p>Contamos con un equipo de profesores y expertos altamente cualificados en el campo de la ciencia y la ingeniería.</p>
+                          <p>
+                            Contamos con un equipo de profesores y expertos
+                            altamente cualificados en el campo de la ciencia y
+                            la ingeniería.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -152,25 +160,16 @@ const Index = (props) => {
                         </div>
                         <div className="content">
                           <h5>Educación de Calidad</h5>
-                          <p>Nuestros programas académicos destacados te ofrecen una educación de primera en ciencia e ingeniería, impulsándote hacia un futuro exitoso.</p>
+                          <p>
+                            Nuestros programas académicos destacados te ofrecen
+                            una educación de primera en ciencia e ingeniería,
+                            impulsándote hacia un futuro exitoso.
+                          </p>
                         </div>
                       </div>
                     </div>
-                   
                   </div>
                 </div>
-                {/* <div className="about-btns">
-                  <Link href="/about">
-                    <a className="theme-btn style-two my-15">
-                      Learn more us <i className="fas fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <Link href="/faqs">
-                    <a className="read-more">
-                      How it works <i className="fas fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div> */}
               </div>
             </div>
           </div>
@@ -187,415 +186,7 @@ const Index = (props) => {
         </div>
       </section>
       {/* Work Process Section End */}
-      {/* Newsletter Section Start */}
-      {/* <section className="newsletter-section pb-130 rpb-100 wow fadeInUp delay-0-2s">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="newsletter-video overlay">
-                <img src="assets/images/video/video-bg.jpg" alt="Video" />
-                <a
-                  href="https://www.youtube.com/watch?v=9Y7ma241N8k"
-                  className="mfp-iframe video-play"
-                >
-                  <i className="fas fa-play" />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="newsletter-content bg-lighter">
-                <div className="section-title mb-20">
-                  <span className="sub-title mb-25">Newsletters</span>
-                  <h2>Get Our Every Single Notifications</h2>
-                </div>
-                <p>
-                  Sit amet consectetur adipiscinelit eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua suspendisse ultrices gravida.
-                  commodo viverra maecenas accumsan facilisis.
-                </p>
-                <form
-                  onSubmit={(e) => e.preventDefault()}
-                  className="newsletter-form mt-25"
-                  action="#"
-                >
-                  <div className="newsletter-radios mb-25">
-                    <div className="custom-control custom-radio">
-                      <input
-                        type="radio"
-                        className="custom-control-input"
-                        id="hero-wekly"
-                        name="example1"
-                        defaultChecked=""
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="hero-wekly"
-                      >
-                        Regular Updates
-                      </label>
-                    </div>
-                    <div className="custom-control custom-radio">
-                      <input
-                        type="radio"
-                        className="custom-control-input"
-                        id="hero-monthly"
-                        name="example1"
-                      />
-                      <label
-                        className="custom-control-label"
-                        htmlFor="hero-monthly"
-                      >
-                        Weekly Updates
-                      </label>
-                    </div>
-                  </div>
-                  <div className="newsletter-email">
-                    <label htmlFor="email">
-                      <i className="far fa-envelope" />
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="Enter Email Address"
-                      required=""
-                    />
-                    <button type="submit" className="theme-btn">
-                      Subscribe <i className="fas fa-arrow-right" />
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Newsletter Section End */}
-      {/* Events Section Start */}
-      {/* <section className="events-section rel z-1 py-130 rpy-100 bg-blue text-white">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-7 col-lg-8 col-md-9">
-              <div className="section-title text-center mb-55">
-                <span className="sub-title mb-25">Events &amp; Program</span>
-                <h2>We’reArranged Yearly Cultural Events &amp; Program</h2>
-              </div>
-            </div>
-          </div>
-          <Slider {...index1EventWrap} className="event-wrap">
-            <div className="event-item wow fadeInUp delay-0-2s">
-              <div className="image">
-                <img src="assets/images/events/event1.jpg" alt="Event" />
-                <span className="date">25 march 2022</span>
-              </div>
-              <div className="content">
-                <h4>How Much Needs Life Coach For Human Beings</h4>
-                <span className="location">
-                  <i className="fas fa-map-marker-alt" /> 55 Main Street, New
-                  York
-                </span>
-              </div>
-            </div>
-            <div className="event-item wow fadeInUp delay-0-4s">
-              <div className="image">
-                <img src="assets/images/events/event2.jpg" alt="Event" />
-                <span className="date">25 march 2022</span>
-              </div>
-              <div className="content">
-                <h4>How Much Needs Life Coach For Human Beings</h4>
-                <span className="location">
-                  <i className="fas fa-map-marker-alt" /> 55 Main Street, New
-                  York
-                </span>
-              </div>
-            </div>
-            <div className="event-item wow fadeInUp delay-0-6s">
-              <div className="image">
-                <img src="assets/images/events/event3.jpg" alt="Event" />
-                <span className="date">25 march 2022</span>
-              </div>
-              <div className="content">
-                <h4>How Much Needs Life Coach For Human Beings</h4>
-                <span className="location">
-                  <i className="fas fa-map-marker-alt" /> 55 Main Street, New
-                  York
-                </span>
-              </div>
-            </div>
-            <div className="event-item wow fadeInUp delay-0-2s">
-              <div className="image">
-                <img src="assets/images/events/event1.jpg" alt="Event" />
-                <span className="date">25 march 2022</span>
-              </div>
-              <div className="content">
-                <h4>How Much Needs Life Coach For Human Beings</h4>
-                <span className="location">
-                  <i className="fas fa-map-marker-alt" /> 55 Main Street, New
-                  York
-                </span>
-              </div>
-            </div>
-            <div className="event-item wow fadeInUp delay-0-4s">
-              <div className="image">
-                <img src="assets/images/events/event2.jpg" alt="Event" />
-                <span className="date">25 march 2022</span>
-              </div>
-              <div className="content">
-                <h4>How Much Needs Life Coach For Human Beings</h4>
-                <span className="location">
-                  <i className="fas fa-map-marker-alt" /> 55 Main Street, New
-                  York
-                </span>
-              </div>
-            </div>
-            <div className="event-item wow fadeInUp delay-0-6s">
-              <div className="image">
-                <img src="assets/images/events/event3.jpg" alt="Event" />
-                <span className="date">25 march 2022</span>
-              </div>
-              <div className="content">
-                <h4>How Much Needs Life Coach For Human Beings</h4>
-                <span className="location">
-                  <i className="fas fa-map-marker-alt" /> 55 Main Street, New
-                  York
-                </span>
-              </div>
-            </div>
-          </Slider>
-        </div>
-        <span className="bg-text">coach</span>
-        <img
-          className="rectangle-dots"
-          src="assets/images/shapes/rectangle-dots.png"
-          alt="Shape"
-        />
-        <img
-          className="circle-dots"
-          src="assets/images/shapes/circle-dots.png"
-          alt="Shape"
-        />
-      </section> */}
-      {/* Events Section End */}
-      {/* Testimonials Section Start */}
-      {/* <section className="testimonials-section bg-white rel z-1 py-130 rpy-100">
-        <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-lg-5">
-              <div className="testimonial-left-content rmb-65 wow fadeInLeft delay-0-2s">
-                <div className="section-title">
-                  <span className="sub-title mb-15">Testimonials</span>
-                  <h2>Happy Clients Say About Coach</h2>
-                </div>
-                <p>
-                  Quis autem veleum iure reprehenderit voluptate velit esse quam
-                  nihil molestiae consequatur vel illum dolore eum fugiat quo
-                  voluptas nulla pariatur
-                </p>
-                <h4 className="partner-title mt-25 mb-15">
-                  We Have <span>1356+</span> Global Partners
-                </h4>
-                <div className="partner-iamges-wrap">
-                  <img
-                    src="assets/images/testimonials/partner1.jpg"
-                    alt="Partner"
-                  />
-                  <img
-                    src="assets/images/testimonials/partner2.jpg"
-                    alt="Partner"
-                  />
-                  <img
-                    src="assets/images/testimonials/partner3.jpg"
-                    alt="Partner"
-                  />
-                  <img
-                    src="assets/images/testimonials/partner4.jpg"
-                    alt="Partner"
-                  />
-                  <img
-                    src="assets/images/testimonials/partner5.jpg"
-                    alt="Partner"
-                  />
-                  <img
-                    src="assets/images/testimonials/partner6.jpg"
-                    alt="Partner"
-                  />
-                  <span className="plus">+</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <Slider
-                {...index1Testimonial}
-                className="testimonial-wrap wow fadeInRight delay-0-2s"
-              >
-                <div className="testimonial-item">
-                  <div className="testimonial-author">
-                    <img
-                      src="assets/images/testimonials/author.jpg"
-                      alt="Author"
-                    />
-                  </div>
-                  <div className="testimonial-content">
-                    <div className="designation">
-                      <h4>Justin C. Swanson</h4>
-                      <span>Business Manager</span>
-                    </div>
-                    <p>
-                      Voluptatem accusantium doloremq udantium totam rem aperiam
-                      eaque quae abillo inventore veritatis et quasi architecto
-                      beatae Sed ut perspiciatis unde omnis iste natus error sit
-                    </p>
-                    <div className="ratting">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                    </div>
-                  </div>
-                </div>
-                <div className="testimonial-item">
-                  <div className="testimonial-author">
-                    <img
-                      src="assets/images/testimonials/author.jpg"
-                      alt="Author"
-                    />
-                  </div>
-                  <div className="testimonial-content">
-                    <div className="designation">
-                      <h4>Gerardo M. Jordan</h4>
-                      <span>Business Manager</span>
-                    </div>
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremq udantium totam rem aperiam
-                      eaque quae abillo inventore veritatis et quasi architecto
-                      beatae
-                    </p>
-                    <div className="ratting">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                    </div>
-                  </div>
-                </div>
-                <div className="testimonial-item">
-                  <div className="testimonial-author">
-                    <img
-                      src="assets/images/testimonials/author.jpg"
-                      alt="Author"
-                    />
-                  </div>
-                  <div className="testimonial-content">
-                    <div className="designation">
-                      <h4>Justin C. Swanson</h4>
-                      <span>Business Manager</span>
-                    </div>
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremq udantium totam rem aperiam
-                      eaque quae abillo inventore veritatis et quasi architecto
-                      beatae
-                    </p>
-                    <div className="ratting">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                    </div>
-                  </div>
-                </div>
-                <div className="testimonial-item">
-                  <div className="testimonial-author">
-                    <img
-                      src="assets/images/testimonials/author.jpg"
-                      alt="Author"
-                    />
-                  </div>
-                  <div className="testimonial-content">
-                    <div className="designation">
-                      <h4>Gerardo M. Jordan</h4>
-                      <span>Business Manager</span>
-                    </div>
-                    <p>
-                      Voluptatem accusantium doloremq udantium totam rem aperiam
-                      eaque quae abillo inventore veritatis et quasi architecto
-                      beatae Sed ut perspiciatis unde omnis iste natus error sit
-                    </p>
-                    <div className="ratting">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                    </div>
-                  </div>
-                </div>
-              </Slider>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Testimonials Section End */}
-      
-      {/* Logo Section Start */}
-      {/* <div className="logo-section pt-130 rpt-100 pb-80 rpb-50">
-        <div className="container">
-          <div className="logo-inner">
-            <div className="logo-item wow fadeInUp delay-0-1s">
-              <Link href="/contact">
-                <img
-                  src="assets/images/client-logos/client-logo1.png"
-                  alt="Client Logo"
-                />
-              </Link>
-            </div>
-            <div className="logo-item wow fadeInUp delay-0-2s">
-              <Link href="/contact">
-                <img
-                  src="assets/images/client-logos/client-logo2.png"
-                  alt="Client Logo"
-                />
-              </Link>
-            </div>
-            <div className="logo-item wow fadeInUp delay-0-3s">
-              <Link href="/contact">
-                <img
-                  src="assets/images/client-logos/client-logo3.png"
-                  alt="Client Logo"
-                />
-              </Link>
-            </div>
-            <div className="logo-item wow fadeInUp delay-0-4s">
-              <Link href="/contact">
-                <img
-                  src="assets/images/client-logos/client-logo4.png"
-                  alt="Client Logo"
-                />
-              </Link>
-            </div>
-            <div className="logo-item wow fadeInUp delay-0-5s">
-              <Link href="/contact">
-                <img
-                  src="assets/images/client-logos/client-logo5.png"
-                  alt="Client Logo"
-                />
-              </Link>
-            </div>
-            <div className="logo-item wow fadeInUp delay-0-6s">
-              <Link href="/contact">
-                <img
-                  src="assets/images/client-logos/client-logo6.png"
-                  alt="Client Logo"
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* Logo Section End */}
+
       {/* Instagram Section Start */}
       <div className="instagram-section pb-120 rpb-90">
         <div className="container-fluid">
