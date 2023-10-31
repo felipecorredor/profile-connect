@@ -13,7 +13,7 @@ const StudentList = () => {
 
   return (
     <div className="row">
-      {students.map((student) => (
+      {students?.map((student) => (
         <StudentCard key={student.id} student={student} />
       ))}
     </div>
