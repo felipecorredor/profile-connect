@@ -1,4 +1,6 @@
-import prisma from "../../../libs/prismadb";
+// import prisma from "../../../libs/prismadb";
+
+const prisma = new PrismaClient();
 
 export default async function handle(req, res) {
   try {
