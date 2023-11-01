@@ -5,11 +5,9 @@ import useSWR from "swr";
 import { fetcher } from "../../../utils";
 
 const StudentList = () => {
-  const { data, error } = useSWR("/api/students/getAll", fetcher);
+  const { data: students, error } = useSWR("/api/students/getAll", fetcher);
   if (error) return <div>An error occured.</div>;
-  if (!data) return <div className="preloader" />;
-
-  const { students } = data;
+  if (!students) return <div className="preloader" />;
 
   return (
     <div className="row">
