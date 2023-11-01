@@ -6,6 +6,9 @@ import { fetcher } from "../../../utils";
 
 const StudentList = () => {
   const { data: students, error } = useSWR("/api/students/getAll", fetcher);
+
+  console.error("ERROR GETTING STUDENTS", error);
+
   if (error) return <div>An error occured.</div>;
   if (!students) return <div className="preloader" />;
 
