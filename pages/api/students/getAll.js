@@ -7,6 +7,6 @@ export default async function handle(req, res) {
     res.json(students);
   } catch (error) {
     console.error("Error getting students::", error);
-    res.status(500).send({ error });
+    res.status(500).json({ error });
   }
 }
